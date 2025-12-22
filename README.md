@@ -2,7 +2,7 @@
 
 A structured learning and contribution repository documenting my journey toward becoming a high-impact contributor to the Rust Bitcoin ecosystem, with a focus on code comprehension, Rust fundamentals, and open-source workflow mastery.
 
-# Purpose
+## Purpose
 
 This repository exists to systematically prepare me for meaningful contributions to major Rust Bitcoin projects—particularly rust-bitcoin:
 
@@ -14,7 +14,7 @@ This repository exists to systematically prepare me for meaningful contributions
 This is not a tutorial repo and not a collection of random experiments.
 It is a deliberate, documented learning path aligned with professional open-source contribution standards.
 
-# Long-Term Goal
+## Long-Term Goal
 
 By March 2026, I aim to:
 
@@ -23,7 +23,7 @@ By March 2026, I aim to:
   Contribute production-quality pull requests that maintainers can trust
   Become a consistent, reliable contributor in the Rust Bitcoin ecosystem
 
-# Repository Structure
+## Repository Structure
 
 
 rust-bitcoin-journey/
@@ -32,14 +32,14 @@ rust-bitcoin-journey/
 ├── contributions/   # Work-in-progress PRs, issue investigations, and patches
 └── journal.md       # Daily learning log and progress tracking
 
-# notes/
+### notes/
 
   Concept explanations in my own words
   Codebase navigation notes
   Rust concepts as they appear in Bitcoin code (ownership, enums, error handling)
   Maintainer-style observations and design insights
 
-# exercises/
+### exercises/
 
 Rust exercises derived from real patterns in rust-bitcoin
   Focus on:
@@ -50,21 +50,21 @@ Rust exercises derived from real patterns in rust-bitcoin
     
  No “toy” examples unless they map to real Bitcoin concepts
 
-# contributions/
+### contributions/
 
   Draft PRs and patch experiments
   Issue breakdowns and root-cause analysis
   Notes on review feedback and lessons learned
   A staging area before submitting upstream contributions
 
-# journal.md
+### journal.md
 
   Daily progress log
   What was studied, what was confusing, what improved
   Reflection on mistakes and breakthroughs
   Accountability record for long-term consistency
 
-# Learning Philosophy
+## Learning Philosophy
 
 This repository follows a maintainer-first learning approach:
 
@@ -75,7 +75,7 @@ This repository follows a maintainer-first learning approach:
 
 I focus on how Rust is used to prevent invalid Bitcoin states, not just how to make the compiler happy.
 
-# Tools & Stack
+## Tools & Stack
 
   Language: Rust
   Version Control: Git & GitHub
@@ -85,7 +85,7 @@ rust-bitcoin
   Workflow: Fork → Branch → Pull Request → Review → Iterate
 
 
-# Status
+## Status
 
 Active / In Progress
 
