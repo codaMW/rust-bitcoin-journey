@@ -25,21 +25,21 @@ By March 2026, I aim to:
 
 ## Repository Structure
 
-
 rust-bitcoin-journey/
 ├── notes/           # Learning notes from reading Rust & Bitcoin codebases
 ├── exercises/       # Targeted Rust practice inspired by real Bitcoin code
 ├── contributions/   # Work-in-progress PRs, issue investigations, and patches
 └── journal.md       # Daily learning log and progress tracking
 
-### notes/
+
+#### notes/
 
   Concept explanations in my own words
   Codebase navigation notes
   Rust concepts as they appear in Bitcoin code (ownership, enums, error handling)
   Maintainer-style observations and design insights
 
-### exercises/
+#### exercises/
 
 Rust exercises derived from real patterns in rust-bitcoin
   Focus on:
@@ -50,14 +50,14 @@ Rust exercises derived from real patterns in rust-bitcoin
     
  No “toy” examples unless they map to real Bitcoin concepts
 
-### contributions/
+#### contributions/
 
   Draft PRs and patch experiments
   Issue breakdowns and root-cause analysis
   Notes on review feedback and lessons learned
   A staging area before submitting upstream contributions
 
-### journal.md
+#### journal.md
 
   Daily progress log
   What was studied, what was confusing, what improved
