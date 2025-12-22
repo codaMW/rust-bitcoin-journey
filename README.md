@@ -29,11 +29,11 @@ rust-bitcoin-journey/
 
 ├── notes/ # Learning notes from reading Rust & Bitcoin codebases
 
-├── exercises/       # Targeted Rust practice inspired by real Bitcoin code
+├── exercises/         Targeted Rust practice inspired by real Bitcoin code
 
-├── contributions/   # Work-in-progress PRs, issue investigations, and patches
+├── contributions/     Work-in-progress PRs, issue investigations, and patches
 
-└── journal.md       # Daily learning log and progress tracking
+└── journal.md         Daily learning log and progress tracking
 
 
 ### notes/
