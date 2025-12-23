@@ -1,0 +1,56 @@
+truct Transaction {
+        txid: String,
+            inputs: Vec<String>,
+                outputs: Vec<String>,
+}
+
+/* Takes ownership of a Transaction.
+ * This simulates logic that *consumes* a transaction, such as
+ * inserting it into a mempool or passing it through a validation pipeline.
+ *
+ * The function must:
+ *
+ * Take ownership of `tx`
+ * Print the transaction ID
+ *Return the transaction unchanged
+*/
+
+ fn consume_transaction(tx: Transaction) -> Transaction {
+     // TODO: print the txid
+         // TODO: return ownership of the transaction
+             todo!()
+             }
+/*
+Borrows a Transaction immutably.
+This simulates logic that only *inspects* a transaction,
+              such as logging or fee estimation.
+             
+              The function must:
+              - Borrow the transaction immutably
+              - Print the number of inputs and outputs
+              - NOT take ownership
+*/
+
+             fn inspect_transaction(tx: &Transaction) {
+                 // TODO: print inputs and outputs count
+                     todo!()
+                     }
+                     fn main() {
+                         let tx = Transaction {
+                                 txid: "abc123".to_string(),
+                                         inputs: vec!["input1".to_string(),
+                                         "input2".to_string()],
+                                                 outputs: vec!["output1".to_string()],
+                                                     };
+                                                         // TODO: inspect the transaction before
+                                                         it is consumed
+                                                             todo!();
+
+                                                                 // TODO: consume the/                                                                 transaction and re-bind it
+                                                                     let tx = todo!();
+
+                                                                         // TODO: inspect the
+                                                                         transaction again after
+                                                                         ownership is returned
+                                                                             todo!();
+                                                                             }
