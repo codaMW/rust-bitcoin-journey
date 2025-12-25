@@ -1,0 +1,1 @@
+C:\Users\USER\rust-bitcoin-journey\exercises\introduction_to_structs\target\debug\introduction_to_structs.exe: C:\Users\USER\rust-bitcoin-journey\exercises\introduction_to_structs\src\main.rs C:\Users\USER\rust-bitcoin-journey\exercises\introduction_to_structs\src\struct_def.rs

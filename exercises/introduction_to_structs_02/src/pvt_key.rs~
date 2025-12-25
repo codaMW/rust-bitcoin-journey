@@ -1,0 +1,28 @@
+pub struct PrivateKey {
+
+    secret: String,
+}
+
+impl PrivateKey {
+
+    pub fn new(secret: String) -> Self {
+        Self {
+            secret,
+        }
+    }
+
+    pub fn display(&self) {
+
+        println!("\nprivate key: {:?}\nkey length: {}\n", self.secret, self.secret.len());
+    }
+
+   pub fn wipe(&mut self) {
+
+        self.secret = String::new();
+       
+
+        println!("private key: cleared\nkey length: {}\n", self.secret, self.secret.len());
+    }
+
+}
+

@@ -1,0 +1,36 @@
+#[derive(Debug)]
+#[allow(dead_code)]
+
+pub struct TxOut {
+
+    value: u64,
+    script_pubkey: String,
+}
+
+#[allow(unused)]
+
+impl TxOut {
+
+    pub fn new(value: u64, script_pubkey: String) -> Self {
+
+        Self {
+           value,
+           script_pubkey,
+        }
+    }
+
+
+    pub fn print_struct(&self) {
+
+        println!("\nsatoshis: {}\nscript_pubkey: {}", &self.value, &self.script_pubkey)
+    }
+
+    pub fn is_dust(&self) -> bool {
+
+        if *&self.value <= 546 {
+            true
+        } else {
+            false
+        }
+    }
+}

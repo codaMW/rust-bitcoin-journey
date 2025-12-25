@@ -1,0 +1,18 @@
+#[derive(Debug)]
+
+pub struct TxOut {
+
+    value: u64,
+    script_pubkey: String,
+}
+
+impl TxOut {
+
+    pub fn new(&self, &self.value, &self.script_pubkey) -> Self {
+
+        Self {
+           value,
+           script_pubkey,
+        }
+    }
+}

@@ -50,3 +50,34 @@ Ownership transfer in Rust is explicit and intentional. In Bitcoin-style softwar
 ### Next Step
 Continue exploring ownership errors deliberately to better understand how Rust enforces safety, and begin examining how ownership patterns appear in rust-bitcoin’s transaction validation code.
 
+
+## Day 3 — Bitcoin Primitives & Rust Visibility
+
+### What I Did
+- Studied the `primitives` module in rust-bitcoin
+- Modeled Bitcoin address variants using Rust enums
+- Combined enums and structs to represent an Address type
+- Encountered and resolved Rust visibility errors using constructor-based design
+
+### Outcome
+- Successfully implemented a Bitcoin-style `Address` struct with private fields
+- Learned how Rust enforces invariant-safe construction across modules
+- Gained hands-on experience with patterns used in rust-bitcoin primitives
+
+### Error Encountered
+- Compiler error when constructing a struct with private fields from another module
+- Error code: `E0451` (attempted access to private struct fields)
+
+### Key Takeaway
+Rust’s privacy model is a deliberate safety mechanism.
+Bitcoin primitives should not expose their internal state freely.
+Constructor-based APIs are essential for correctness and maintainability.
+
+### Reflection
+This was my first time experiencing Rust actively preventing me from designing an unsafe API.
+The solution felt aligned with how Bitcoin Core and rust-bitcoin enforce correctness.
+
+### Next Step
+- Continue reading rust-bitcoin primitives with a focus on enums and type modeling
+- Practice implementing accessor methods and match-based logic
+

@@ -1,0 +1,12 @@
+[package]
+name = "bitcoin-primitives-lab"
+version = "0.1.0"
+edition = "2024"
+description = "Educational project analyzing Bitcoin primitive types and ownership patterns"
+repository = "https://github.com/YOUR_USERNAME/bitcoin-primitives-lab"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+
+[dependencies]
+bitcoin = { git = "https://github.com/rust-bitcoin/rust-bitcoin" }
+thiserror = "1.0"  # For error handling\

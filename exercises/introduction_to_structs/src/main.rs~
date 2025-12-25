@@ -1,0 +1,15 @@
+mod struct_def;
+use struct_def::TxOut;
+
+fn main() {
+
+    let tx1 = TxOut::new(50000000, String::from("OP_PUSHBYTES_32 701a8d401c84fb13e6baf169d59684e17abd9fa216c8cc5b9fc63d622ff8c58d"));
+
+    TxOut::print_struct(&tx1);
+    println!("is dust transaction: {}\n",TxOut::is_dust(&tx1);
+
+    let tx2 = TxOut::new(300, String::from("OP_PUSHBYTES_32 9c4faa66ed06bb6044499fa575202730d1ea6af9b34e98d522c57854751acdf3"));
+
+    TxOut::print_struct(&tx2);
+   println!("is dust transaction: {}\n", TxOut::is_dust(&tx2);
+}

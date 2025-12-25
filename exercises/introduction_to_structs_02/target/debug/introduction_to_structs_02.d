@@ -1,0 +1,1 @@
+C:\Users\USER\rust-bitcoin-journey\exercises\introduction_to_structs_02\target\debug\introduction_to_structs_02.exe: C:\Users\USER\rust-bitcoin-journey\exercises\introduction_to_structs_02\src\main.rs C:\Users\USER\rust-bitcoin-journey\exercises\introduction_to_structs_02\src\pvt_key.rs

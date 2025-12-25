@@ -1,0 +1,1 @@
+C:\Users\USER\rust-bitcoin-journey\exercises\combining_enums_and_structs\target\debug\combining_enums_and_structs.exe: C:\Users\USER\rust-bitcoin-journey\exercises\combining_enums_and_structs\src\combo.rs C:\Users\USER\rust-bitcoin-journey\exercises\combining_enums_and_structs\src\main.rs

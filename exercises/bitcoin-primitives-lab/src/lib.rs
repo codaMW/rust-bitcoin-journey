@@ -1,0 +1,30 @@
+// Exercise 02 — Bitcoin Primitive Types
+
+#[derive(Debug, PartialEq, Eq)]
+struct Txid([u8; 32]);
+
+#[derive(Debug, PartialEq, Eq)]
+struct BlockHash([u8; 32]);
+
+#[derive(Debug)]
+struct OutPoint {
+    txid: Txid,
+    vout: u32,
+}
+
+fn print_outpoint(op: &OutPoint) {
+    // TODO: print the txid and output index
+    println!("txid: {:?}\nvout: {}", &self.txid, &self.vout);
+}
+
+fn main() {
+    let txid = Txid([1u8; 32]);
+    let block_hash = BlockHash([2u8; 32]);
+
+    // TODO: explain (in comments) why this should NOT compile
+    // let wrong = OutPoint { txid: block_hash, vout: 0 };
+
+    let op = OutPoint { txid, vout: 0 };
+
+    print_outpoint(&op);
+}

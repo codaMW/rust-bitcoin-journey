@@ -1,0 +1,1 @@
+C:\Users\USER\rust-bitcoin-journey\exercises\simple_enum_and_pattern_matching\target\debug\simple_enum_and_pattern_matching.exe: C:\Users\USER\rust-bitcoin-journey\exercises\simple_enum_and_pattern_matching\src\enum_01.rs C:\Users\USER\rust-bitcoin-journey\exercises\simple_enum_and_pattern_matching\src\main.rs
