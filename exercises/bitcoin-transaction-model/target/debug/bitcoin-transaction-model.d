@@ -1,0 +1,1 @@
+C:\Users\USER\rust-bitcoin-journey\exercises\bitcoin-transaction-model\target\debug\bitcoin-transaction-model.exe: C:\Users\USER\rust-bitcoin-journey\exercises\bitcoin-transaction-model\src\main.rs C:\Users\USER\rust-bitcoin-journey\exercises\bitcoin-transaction-model\src\trans_lib.rs

@@ -81,3 +81,19 @@ The solution felt aligned with how Bitcoin Core and rust-bitcoin enforce correct
 - Continue reading rust-bitcoin primitives with a focus on enums and type modeling
 - Practice implementing accessor methods and match-based logic
 
+
+## Day 4 — Establishing a Baseline
+
+Today I made a deliberate decision to preserve my original Bitcoin
+transaction implementation as a baseline.
+
+Instead of immediately refactoring or optimizing, I committed the
+initial model to create a clear reference point for future improvements.
+
+Key lesson:
+Good engineering is iterative. Preserving working code allows me to
+reason about trade-offs, track progress, and understand *why* changes
+are introduced rather than blindly rewriting.
+
+This mirrors how Bitcoin and other critical open source systems evolve.
+
