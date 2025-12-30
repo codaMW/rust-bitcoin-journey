@@ -97,3 +97,39 @@ are introduced rather than blindly rewriting.
 
 This mirrors how Bitcoin and other critical open source systems evolve.
 
+
+## Day 5 - 7
+
+### Work completed
+
+- Implemented a function using `Option<u32>` to describe Bitcoin-style locktime
+- Implemented a function using `Result<i64, String>` to safely parse and validate
+  user input amounts
+- Practiced consuming `Result` values using `match` instead of `unwrap`
+- Debugged a Rust compiler error related to `match` syntax
+
+### Key technical learnings
+
+#### 1. `Option<T>` represents absence, not failure
+- `None` is a valid state, not an error
+- This maps naturally to Bitcoin concepts such as optional fields
+- Learned to handle `Some(0)` and `None` explicitly instead of assuming defaults
+
+#### 2. `Result<T, E>` enforces explicit error handling
+- Parsing user input must never panic
+- Errors should communicate *why* something failed
+- Validation should happen immediately after parsing
+
+#### 3. Avoiding `unwrap()` is critical
+- `unwrap()` hides failure paths
+- Library and protocol code must remain panic-free
+- This aligns with rust-bitcoin and Mostro coding expectations
+
+#### 4. Understanding compiler errors
+- Rust reported an error on a `=>` line inside a `match`
+- The real issue was a missing `{` earlier in the block
+- Learned that compiler errors often point to the symptom, not the cause
+- Now inspect surrounding structure before assuming logic errors
+
+
+
