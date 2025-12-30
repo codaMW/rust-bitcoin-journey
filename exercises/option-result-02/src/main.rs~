@@ -1,0 +1,21 @@
+fn maybe_length(val: &str) -> Option<usize> {
+
+    if val.is_empty() {
+        None
+    } else {
+        Some(val.len())
+    }
+}
+
+fn main() {
+
+let inputs = ["Hello Option<T>", "Next is Result<T E>", ""];
+
+for &input in &inputs {
+    match maybe_length(input) {
+        Some(len) => println!("Length = {}", len),
+        None => println!("String is empty"),
+    }
+}
+}
+
