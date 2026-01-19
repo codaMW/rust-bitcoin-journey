@@ -1,0 +1,1 @@
+/home/codaswe/rust-bitcoin-journey/exercises/bitcoin-tx-crate/target/debug/bitcoin-tx-crate: /home/codaswe/rust-bitcoin-journey/exercises/bitcoin-tx-crate/src/main.rs /home/codaswe/rust-bitcoin-journey/exercises/bitcoin-tx-crate/src/tx_lib.rs
