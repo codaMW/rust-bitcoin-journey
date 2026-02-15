@@ -1,0 +1,60 @@
+   0.211453400s  INFO prepare_target{force=false package_id=simple_error v0.1.0 (\\wsl.localhost\Ubuntu\home\codaswe\rust-bitcoin-journey\exercises\simple_error) target="simple_error"}: cargo::core::compiler::fingerprint: fingerprint error for simple_error v0.1.0 (\\wsl.localhost\Ubuntu\home\codaswe\rust-bitcoin-journey\exercises\simple_error)/Check { test: false }/TargetInner { name: "simple_error", doc: true, ..: with_path("\\\\wsl.localhost\\Ubuntu\\home\\codaswe\\rust-bitcoin-journey\\exercises\\simple_error\\src\\main.rs", Edition2024) }
+   0.211522100s  INFO prepare_target{force=false package_id=simple_error v0.1.0 (\\wsl.localhost\Ubuntu\home\codaswe\rust-bitcoin-journey\exercises\simple_error) target="simple_error"}: cargo::core::compiler::fingerprint:     err: failed to read `\\wsl.localhost\Ubuntu\home\codaswe\rust-bitcoin-journey\exercises\simple_error\target\debug\.fingerprint\simple_error-0e538ad81a847299\bin-simple_error`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.251248500s  INFO prepare_target{force=false package_id=simple_error v0.1.0 (\\wsl.localhost\Ubuntu\home\codaswe\rust-bitcoin-journey\exercises\simple_error) target="simple_error"}: cargo::core::compiler::fingerprint: fingerprint error for simple_error v0.1.0 (\\wsl.localhost\Ubuntu\home\codaswe\rust-bitcoin-journey\exercises\simple_error)/Check { test: true }/TargetInner { name: "simple_error", doc: true, ..: with_path("\\\\wsl.localhost\\Ubuntu\\home\\codaswe\\rust-bitcoin-journey\\exercises\\simple_error\\src\\main.rs", Edition2024) }
+   0.251288200s  INFO prepare_target{force=false package_id=simple_error v0.1.0 (\\wsl.localhost\Ubuntu\home\codaswe\rust-bitcoin-journey\exercises\simple_error) target="simple_error"}: cargo::core::compiler::fingerprint:     err: failed to read `\\wsl.localhost\Ubuntu\home\codaswe\rust-bitcoin-journey\exercises\simple_error\target\debug\.fingerprint\simple_error-47bb68a11302a848\test-bin-simple_error`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking simple_error v0.1.0 (\\wsl.localhost\Ubuntu\home\codaswe\rust-bitcoin-journey\exercises\simple_error)
+error: could not compile `simple_error` (bin "simple_error") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `simple_error` (bin "simple_error" test) due to 1 previous error
