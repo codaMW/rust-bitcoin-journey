@@ -46,33 +46,14 @@ fn main() {
     let check_height = |height| height > 800_000;
     let min_height = 800_000; 
     println!("{}", check_height(min_height));
-    println!("{}", check_height(min_height));
     
     // TASK 2: Create a FnMut closure that keeps track of how many transactions
     // you've processed. It should increment a counter each time it's called
     // and print "Processed {} transactions"
-    let mut count = 0;
-    let mut tx_counter = || {
-        count += 1;
-
-        println!("Processed {} transactions", count);
-    };
-
-    tx_counter();
-    tx_counter();
-    tx_counter();
     
     // TASK 3: Create a FnOnce closure that takes ownership of a String
     // containing your node's version, and prints it
     // Call it once
-
-    let my_node_verison = String::from("v2");
-    let node_version = || {
-        println!("Version = {}", my_node_verison);
-        drop(my_node_verison);
-    };
-
-    node_version();
 }
 
 #[cfg(test)]
