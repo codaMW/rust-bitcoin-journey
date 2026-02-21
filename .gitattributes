@@ -1,0 +1,5 @@
+# Mark build scripts as generated files, not Makefiles
+target/** linguist-generated=true
+**/target/** linguist-generated=true
+*.rs linguist-language=Rust
+Cargo.lock linguist-generated=true
