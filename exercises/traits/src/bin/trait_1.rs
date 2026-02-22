@@ -45,7 +45,9 @@ fn check_validity<T>(item: &T) where T: Validate {
 fn main() {
 
     let regtest_segwit = BitcoinAddress {address: String::from("bcrt1qq2yshcmzdlznnpxx258xswqlmqcxjs4dssfxt2")};
+    let check = BitcoinAddress {address: String::from("bc1")};
     let invalid_addr = BitcoinAddress {address: String::from("invalidaddress123")};
+    check_validity(&check);
     check_validity(&regtest_segwit);
     check_validity(&invalid_addr);
 
