@@ -23,3 +23,4 @@ impl Event {
         self.sig = "fake_signature_for_now".to_string();
     }
 }
+
