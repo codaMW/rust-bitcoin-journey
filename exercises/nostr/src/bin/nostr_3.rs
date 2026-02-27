@@ -17,3 +17,9 @@ impl Event {
         format!("{:x}", hasher.finalize())
     }
 }
+
+impl Event {
+    fn sign(&mut self) {
+        self.sig = "fake_signature_for_now".to_string();
+    }
+}
