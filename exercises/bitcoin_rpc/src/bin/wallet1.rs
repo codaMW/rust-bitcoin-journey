@@ -70,5 +70,32 @@ fn main() -> bitcoincore_rpc::Result<()> {
     let balance = wrpc.get_balance(None, None)?;
     println!("Balance: {} BTC", balance.to_btc());
 
+    // ─────────────────────────────────────
+    // Step 6: Mine 101 blocks
+    // ─────────────────────────────────────
+    println!("Mining 101 blocks...");
+    wrpc.generate_to_address(101, &address)?;
+
+    // ─────────────────────────────────────
+    // Step 7: Check balance again
+    // ─────────────────────────────────────
+    let balance = wrpc.get_balance(None, None)?;
+    println!("Balance after mining: {} BTC", balance.to_btc());
+
+    // ─────────────────────────────────────
+    // Step 8: List UTXOs
+    // ─────────────────────────────────────
+    let utxos = wrpc.list_unspent(Some(1), None, None, None, None)?;
+    println!("Spendable UTXOs: {}", utxos.len());
+    for utxo in &utxos {
+        println!(
+            "  txid: {}...{} | amount: {} BTC | confirmations: {}",
+            &utxo.txid.to_string()[..8],
+            &utxo.txid.to_string()[56..],
+            utxo.amount.to_btc(),
+            utxo.confirmations
+        );
+    }
+
     Ok(())
 }
