@@ -16,10 +16,11 @@ fn main() -> bitcoincore_rpc::Result<()> {
     let info = rpc.get_blockchain_info()?;
 
     // Step 3: Print what we got back
-    println!("Chain:        {}", info.chain);
-    println!("Block height: {}", info.blocks);
-    println!("Best hash:    {}", info.best_block_hash);
-    println!("Difficulty:   {}", info.difficulty);
+    //println!("Chain:        {}", info.chain);
+    //println!("Block height: {}", info.blocks);
+    //println!("Best hash:    {}", info.best_block_hash);
+    //println!("Difficulty:   {}", info.difficulty);
+    println!("{:?}", info);
 
     Ok(())
 }
