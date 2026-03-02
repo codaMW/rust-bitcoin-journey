@@ -1,0 +1,9 @@
+[package]
+name = "random-stf"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bitcoin = "0.32"
+rand = "0.8"
+secp256k1 = { version = "0.29", features = ["rand", "hashes"] }
