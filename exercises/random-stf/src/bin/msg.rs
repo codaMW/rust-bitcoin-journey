@@ -5,6 +5,12 @@ fn build_message_header(command: &str, payload: &[u8]) -> Vec<u8> {
     
     let mut header = Vec::new();
     header.extend_from_slice(&magic_bytes);
+
+    let mut command_bytes = [0u8; 12];
+    let ascii = command.as_bytes();
+    command_bytes[..ascii.len()].copy_from_slice(ascii);
+
+    header.extend_from_slice(&command_bytes);
     header
 }
 
